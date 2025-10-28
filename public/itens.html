@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itens - SmartStock</title>
+    <link rel="stylesheet" href="./style/styleItens.css"> 
+    <link rel="icon" href="./icon/logo-small.ico">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.8/html5-qrcode.min.js"></script>
+</head>
+<body>
+
+    <div class="topo">
+        <h1 id="titulo-parceiro" class="saudacao"></h1>
+        <a href="dashboard.html" class="menu-icon" style="text-decoration: none;">←</a>
+    </div>
+
+    <main class="itens-main-container">
+        
+        <button id="toggle-scanner-btn" class="main-btn">Abrir Scanner</button>
+
+        <section id="lista-itens-section" class="section-ativa">
+            <h2>Itens Cadastrados</h2>
+            <div id="itens-unicos-container">
+                <p>Carregando tipos de itens...</p>
+            </div>
+        </section>
+        
+        <section id="detalhes-item-section" class="section-oculta">
+            <h2 id="titulo-detalhe">Detalhes do Item</h2>
+            <button id="btn-voltar-unicos" class="main-btn btn-voltar">← Voltar para Lista</button>
+            <div id="detalhes-container">
+                <p>Carregando instâncias...</p>
+            </div>
+        </section>
+
+        <section id="scanner-section" class="section-oculta">
+            <h2>Registrar Novo Item via QR Code</h2>
+            <div id="reader" style="width: 100%; max-width: 500px;"></div>
+            <p id="scanner-status" style="margin-top: 15px; color: white;"></p>
+        </section>
+
+    </main>
+
+    <script src="./scripts/itensScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartStock</title>
+    <link rel="stylesheet" href="./style/styleDashboard.css"> 
+    <link rel="icon" href="./icon/logo-small.ico">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+</head>
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Parceiros</a></li>
+            <li><a href="#">Relatórios</a></li>
+            <li><a href="#" id="btn-sidebar-logout">Sair</a></li>
+        </ul>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <div class="topo">
+        <h1 id="titulo-usuario" class="saudacao"></h1>
+        <div id="btn-menu-toggle" class="menu-icon">☰</div> 
+    </div>
+
+    <main class="parceiros-container" id="parceiros-container">
+    </main>
+
+    <script src="./scripts/dashboardScript.js"></script>
+</body>
+</html>

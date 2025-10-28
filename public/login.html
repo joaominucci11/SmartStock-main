@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartStock</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="../style/style.css"> 
+    <link rel="icon" href="./icon/logo-small.ico">
+</head>
+<body>
+    <div class="entrar-screen">
+        <div class="entrar-box">
+            <img src="./icon/senai.png" alt="Logo Senai" class="senai">
+            
+            <form id="login-form" novalidate>
+                
+                <div id="etapa-email">
+                    <input type="email" id="email" required placeholder="Email" autocomplete="off"><br><br>
+                </div>
+
+                <div id="etapa-password" class="oculto">
+                    <input type="password" id="password" required placeholder="Senha" autocomplete="off" disabled><br><br>
+                </div>
+
+                <div id="etapa-token" class="oculto">
+                    <div id="token-inputs-container">
+                        <input type="text" class="token-input" maxlength="1" inputmode="numeric" pattern="[0-9]*" disabled>
+                        <input type="text" class="token-input" maxlength="1" inputmode="numeric" pattern="[0-9]*" disabled>
+                        <input type="text" class="token-input" maxlength="1" inputmode="numeric" pattern="[0-9]*" disabled>
+                        <input type="text" class="token-input" maxlength="1" inputmode="numeric" pattern="[0-9]*" disabled>
+                        <input type="text" class="token-input" maxlength="1" inputmode="numeric" pattern="[0-9]*" disabled>
+                        <input type="text" class="token-input" maxlength="1" inputmode="numeric" pattern="[0-9]*" disabled>
+                    </div>
+                    <br><br>
+                </div>
+                
+                <div id="mensagem"></div>
+
+                <button type="submit" id="btn-unico" class="entrar">ENTRAR</button> 
+            </form>
+        </div>
+    </div>
+    <script src="./scripts/loginScript.js"></script> 
+</body>
+</html>
