@@ -54,6 +54,7 @@
     "get-port": "^4.2.0",
     "globals": "^13.24.0",
     "has-flag": "^4.0.0",
+    "http-server": "^14.1.1",
     "is-extglob": "^2.1.1",
     "is-glob": "^4.0.3",
     "is-number": "^7.0.0",

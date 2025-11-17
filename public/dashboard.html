@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartStock</title>
+
     <link rel="stylesheet" href="./style/styleDashboard.css"> 
     <link rel="icon" href="./icon/logo-small.ico">
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0055ff">
 
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-
 </head>
 <body>
 
@@ -33,9 +37,15 @@
         <div id="btn-menu-toggle" class="menu-icon">☰</div> 
     </div>
 
-    <main class="parceiros-container" id="parceiros-container">
-    </main>
+    <main class="parceiros-container" id="parceiros-container"></main>
 
     <script src="./scripts/dashboardScript.js"></script>
+
+    <!-- SERVICE WORKER -->
+    <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/service-worker.js");
+    }
+    </script>
 </body>
 </html>

@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itens - SmartStock</title>
+
     <link rel="stylesheet" href="./style/styleItens.css"> 
     <link rel="icon" href="./icon/logo-small.ico">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.8/html5-qrcode.min.js"></script>
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0055ff">
 </head>
 <body>
 
@@ -44,5 +49,12 @@
     </main>
 
     <script src="./scripts/itensScript.js"></script>
+    
+    <!-- SERVICE WORKER -->
+    <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/service-worker.js");
+    }
+    </script>
 </body>
 </html>
